@@ -10,7 +10,16 @@ using System.Threading.Tasks;
 namespace DKC2SramChecksum {
 	class Program {
 		static void Main(string[] args) {
+			if (args.Length < 1) {
+				Console.WriteLine("Usage: DKC2SramChecksum in.srm [out.srm]");
+				return;
+			}
+
 			var data = new DuplicatableFileStream(args[0]).CopyToMemoryAndDispose();
+			if (data.Length != 2048) {
+				Console.WriteLine("Not a valid filesize for a DKC2 save file (must be 2048 bytes).");
+				return;
+			}
 
 			EndianUtils.Endianness e = EndianUtils.Endianness.LittleEndian;
 
@@ -30,7 +39,7 @@ namespace DKC2SramChecksum {
 				data.WriteUInt16(checkxor, e);
 			}
 
-			using (var fs = new FileStream(args[0], FileMode.Create)) {
+			using (var fs = new FileStream(args.Length < 2 ? (args[0] + ".out") : args[1], FileMode.Create)) {
 				data.Position = 0;
 				StreamUtils.CopyStream(data, fs);
 			}
