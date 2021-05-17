@@ -43,21 +43,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitUtils.cs" />
+    <Compile Include="DuplicatableFileStream.cs" />
+    <Compile Include="DuplicatableStream.cs" />
+    <Compile Include="EndianUtils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StreamUtils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HyoutaUtils\HyoutaPluginBase\HyoutaPluginBase.csproj">
-      <Project>{6e153ce7-05b9-4eba-8de8-ad842214f60b}</Project>
-      <Name>HyoutaPluginBase</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HyoutaUtils\HyoutaUtils\HyoutaUtils.csproj">
-      <Project>{771553c8-0c50-411f-ab7f-e47553c81587}</Project>
-      <Name>HyoutaUtils</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,10 +5,6 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DKC2SramChecksum", "DKC2SramChecksum.csproj", "{33261F35-33CB-4CD3-8C44-3AFBC49B927E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyoutaPluginBase", "..\HyoutaUtils\HyoutaPluginBase\HyoutaPluginBase.csproj", "{6E153CE7-05B9-4EBA-8DE8-AD842214F60B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyoutaUtils", "..\HyoutaUtils\HyoutaUtils\HyoutaUtils.csproj", "{771553C8-0C50-411F-AB7F-E47553C81587}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{33261F35-33CB-4CD3-8C44-3AFBC49B927E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33261F35-33CB-4CD3-8C44-3AFBC49B927E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33261F35-33CB-4CD3-8C44-3AFBC49B927E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6E153CE7-05B9-4EBA-8DE8-AD842214F60B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6E153CE7-05B9-4EBA-8DE8-AD842214F60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6E153CE7-05B9-4EBA-8DE8-AD842214F60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6E153CE7-05B9-4EBA-8DE8-AD842214F60B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{771553C8-0C50-411F-AB7F-E47553C81587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{771553C8-0C50-411F-AB7F-E47553C81587}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{771553C8-0C50-411F-AB7F-E47553C81587}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{771553C8-0C50-411F-AB7F-E47553C81587}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
